@@ -1,15 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <title>Télécharger mon application Android</title>
-</head>
-<body style="font-family: Arial; text-align:center; padding-top:50px;">
-    <h1>Mon Application Mobile  (SAADALI ACHRAF BATOULI SOUKAINA) </h1>
-    <p>Cliquez sur le bouton ci-dessous pour installer l'application Android :</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bankingSystemApp.png" type="image/png">
+    <title>Télécharger l'Application Banking System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <a href="app-debug.apk"
-       style="padding:15px 30px; background:#0070f3; color:white; text-decoration:none; border-radius:8px;">
-       📱 Télécharger l’APK 
-    </a>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(56, 82, 197, 0.5);
+            max-width: 600px;
+            width: 100%;
+            padding: 50px 40px;
+            text-align: center;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+.logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .developers {
+            color: #667eea;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            padding: 10px;
+            background: #f7fafc;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .description {
+            color: #4a5568;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 40px;
+            background: linear-gradient(135deg, rgba(17, 52, 209, 0.5) 0%, #add8e6 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(17, 52, 209, 0.5);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(33, 63, 201, 0.5);
+        }
+
+        .download-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .icon {
+            font-size: 24px;
+        }
+
+        .info-box {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 12px;
+            border-left: 4px solid #add8e6;
+        }
+
+        .info-box p {
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .info-box strong {
+            color: #2d3748;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .download-btn {
+                padding: 16px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="bankingSystemApp.png" alt="" srcset="">
+        </div>
+        
+        <h1>Banking System App</h1>
+        
+        <p class="subtitle">Application Mobile Professionnelle</p>
+        
+        <div class="developers">
+            👨‍💻 Développé par : SAADALI ACHRAF & BATOULI SOUKAINA
+        </div>
+        
+        <p class="description">
+            Téléchargez notre application Android pour profiter d'une expérience bancaire moderne, 
+            sécurisée et intuitive directement depuis votre smartphone.
+        </p>
+
+        <a href="app-debug.apk" class="download-btn">
+            <span class="icon">📱</span>
+            <span>Télécharger l'APK</span>
+        </a>
+
+        <div class="info-box">
+            <p><strong>📋 Instructions d'installation :</strong></p>
+            <p>1. Téléchargez le fichier APK<br>
+            2. Autorisez l'installation depuis des sources inconnues dans les paramètres<br>
+            3. Pendant l 'installation opter pour l'option <strong>installer quand même</strong> <br>
+            4. Ouvrez le fichier téléchargé et suivez les instructions<br>
+            5. Profitez de l'application !</p>
+        </div>
+    </div>
 </body>
 </html>
