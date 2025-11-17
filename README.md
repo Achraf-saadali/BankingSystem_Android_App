@@ -29,8 +29,8 @@ BankingSystem est une application Android de gestion bancaire permettant aux uti
 * **Backend (Python/Flask)** :
 
   * Base de données MySQL pour comptes et transactions
-  * Routes REST (`/transactions`, `/login`, `/withdraw`, `/transfer`)
-  * SOAP endpoints pour certaines opérations bancaires
+  * Routes REST (`/transactions`, `/login`)
+  * SOAP endpoints pour certaines opérations bancaires (`deposit`,/withdraw`, `/transfer`)
 
 ---
 
